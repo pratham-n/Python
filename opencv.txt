@@ -1,0 +1,21 @@
+Install modules:
+pip install opencv-python
+
+Import modules:
+import cv2
+
+Open image:
+img= cv2.imread("Name", mode)
+Where name is image name; mode is the colour; 0 is for b/w and 1 is for RGB.
+
+Printing image:
+print(img) will print 2D array for b/w image and 3D array for RGB image.
+print(img.shape) will print 3 numbers for RGB and 2 numbers for b/w.
+print(type(img)) will print image type, i.e., numpy array.
+
+Showing an image:
+cv2.imshow("name", img)
+cv2.waitkey(parameter)
+parameter specifies the number of milliseconds
+cv2.destroyAllWindows()
+Destroys all windows
